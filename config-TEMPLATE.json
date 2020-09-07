@@ -1,0 +1,35 @@
+{
+  "app": {
+    "routeName":"getOnPlex",
+    "port": 1323,
+    "host": "0.0.0.0"
+  },
+  "rpc": {
+    "host": "myserver.lan",
+    "port": 9091,
+    "user": "user",
+    "password": "superStrongPassword"
+  },
+  "OMDb": {
+    "key": "apiKey"
+  },
+  "ifttt": {
+    "applet": "downloaderResult",
+    "key": "",
+    "resultNotification": true
+  },
+  "downloads": {
+    "movies": {
+      "folder": "/myMovieFolder",
+      "quality": {
+        "720p": true,
+        "1080p": true,
+        "2160p": false
+      }
+    },
+    "series": {
+      "folder": "/mySeriesFolder",
+      "lifespanDays": 4
+    }
+  }
+}
