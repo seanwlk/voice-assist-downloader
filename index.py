@@ -21,6 +21,9 @@ api = Flask(__name__)
 @api.route(f'/{config["app"]["routeName"]}', methods=['GET'])
 def app():
   title = request.args.get('title',default = "")
+  key = request.args.get('key',default = "")
+  if key != config["app"]['privateKey']:
+    return jsonify({'error': '403'})
   DOWNLOADED = {
     "title" : "",
     "image" : "",

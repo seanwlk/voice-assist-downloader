@@ -1,6 +1,7 @@
 {
   "app": {
-    "routeName":"getOnPlex",
+    "privateKey": "put some random alphanumeric string",
+    "routeName": "getOnPlex",
     "port": 1323,
     "host": "0.0.0.0"
   },
